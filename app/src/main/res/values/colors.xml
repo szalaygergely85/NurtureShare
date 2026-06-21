@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#4a654f</color>
+    <color name="on_primary">#ffffff</color>
+    <color name="primary_container">#8daa91</color>
+    <color name="on_primary_container">#253f2b</color>
+    <color name="primary_fixed">#cceacf</color>
+    <color name="primary_fixed_dim">#b0ceb4</color>
+    <color name="on_primary_fixed">#062010</color>
+    <color name="on_primary_fixed_variant">#334d38</color>
+    <color name="inverse_primary">#b0ceb4</color>
+
+    <color name="secondary">#914b35</color>
+    <color name="on_secondary">#ffffff</color>
+    <color name="secondary_container">#ffa589</color>
+    <color name="on_secondary_container">#793823</color>
+    <color name="secondary_fixed">#ffdbd0</color>
+    <color name="secondary_fixed_dim">#ffb59e</color>
+    <color name="on_secondary_fixed">#3a0b00</color>
+    <color name="on_secondary_fixed_variant">#733420</color>
+
+    <color name="tertiary">#605e5c</color>
+    <color name="on_tertiary">#ffffff</color>
+    <color name="tertiary_container">#a6a2a0</color>
+    <color name="on_tertiary_container">#3a3937</color>
+    <color name="tertiary_fixed">#e6e2df</color>
+    <color name="tertiary_fixed_dim">#cac6c3</color>
+
+    <color name="error">#ba1a1a</color>
+    <color name="on_error">#ffffff</color>
+    <color name="error_container">#ffdad6</color>
+    <color name="on_error_container">#93000a</color>
+
+    <color name="background">#fbf9f8</color>
+    <color name="on_background">#1b1c1c</color>
+    <color name="surface">#fbf9f8</color>
+    <color name="on_surface">#1b1c1c</color>
+    <color name="surface_variant">#e4e2e2</color>
+    <color name="on_surface_variant">#424842</color>
+    <color name="surface_container">#efeded</color>
+    <color name="surface_container_low">#f5f3f3</color>
+    <color name="surface_container_lowest">#ffffff</color>
+    <color name="surface_container_high">#eae8e7</color>
+    <color name="surface_container_highest">#e4e2e2</color>
+    <color name="surface_dim">#dbd9d9</color>
+    <color name="surface_bright">#fbf9f8</color>
+    <color name="surface_tint">#4a654f</color>
+    <color name="inverse_surface">#303030</color>
+    <color name="inverse_on_surface">#f2f0f0</color>
+    <color name="outline">#737972</color>
+    <color name="outline_variant">#c2c8c0</color>
+</resources>

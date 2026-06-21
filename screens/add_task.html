@@ -1,0 +1,246 @@
+<!-- Add New Task -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>New Task | Nurture Share</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#737972",
+                        "surface-dim": "#dbd9d9",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e4e2e2",
+                        "tertiary-fixed-dim": "#cac6c3",
+                        "primary-fixed-dim": "#b0ceb4",
+                        "on-secondary-fixed": "#3a0b00",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-surface-variant": "#424842",
+                        "secondary": "#914b35",
+                        "on-surface": "#1b1c1c",
+                        "secondary-fixed-dim": "#ffb59e",
+                        "surface-bright": "#fbf9f8",
+                        "primary": "#4a654f",
+                        "on-tertiary-fixed": "#1c1b1a",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#b0ceb4",
+                        "on-primary-fixed": "#062010",
+                        "surface-container": "#efeded",
+                        "surface-container-highest": "#e4e2e2",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#334d38",
+                        "on-background": "#1b1c1c",
+                        "surface-container-high": "#eae8e7",
+                        "on-error-container": "#93000a",
+                        "background": "#fbf9f8",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#484644",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#793823",
+                        "outline-variant": "#c2c8c0",
+                        "surface-container-low": "#f5f3f3",
+                        "on-secondary-fixed-variant": "#733420",
+                        "primary-container": "#8daa91",
+                        "tertiary": "#605e5c",
+                        "on-tertiary-container": "#3a3937",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#a6a2a0",
+                        "tertiary-fixed": "#e6e2df",
+                        "surface-tint": "#4a654f",
+                        "secondary-fixed": "#ffdbd0",
+                        "primary-fixed": "#cceacf",
+                        "inverse-surface": "#303030",
+                        "secondary-container": "#ffa589",
+                        "surface": "#fbf9f8",
+                        "on-primary-container": "#253f2b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "card-padding": "20px",
+                        "margin-tablet": "24px",
+                        "gutter": "16px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Quicksand"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Quicksand"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Quicksand"],
+                        "headline-lg": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "label-lg": ["12px", {"lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { background-color: #fbf9f8; color: #1b1c1c; -webkit-tap-highlight-color: transparent; }
+    </style>
+<style>body { min-height: max(884px, 100dvh); }</style>
+</head>
+<body class="font-body-md text-body-md selection:bg-primary-fixed-dim">
+<!-- Top App Bar -->
+<header class="docked full-width top-0 sticky z-40 bg-surface shadow-sm w-full max-w-lg mx-auto flex items-center justify-between px-margin-mobile py-2">
+<div class="flex items-center gap-3">
+<button class="material-symbols-outlined text-on-surface-variant hover:opacity-80 active:scale-90 transition-transform p-2">arrow_back</button>
+<h1 class="font-headline-sm text-headline-sm text-primary">New Task</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-fixed shadow-sm">
+<img alt="Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKOhPvyY4Ik-RugUdX1cpd1iVNXZw0v521-31Fe6rbI4iPSs9DrlX6dCyExJPaOiTiU9UsPUggURlKtQamDLH25gDbVKF0OMH9KcUccBFVV77MxgYOdMOzhFxxRqilLHYOTCZBBOMO6YwrKKwuSQiwA9PqAebP2kEaMJ6a3xaEL49o9rgHI2Kw9cWDXMJ8kU_LYQgtJ5qCGj-asENfH471G9fCsWEAnp0y7jw34U6Tmw9NL2WA4eyM6bGS69PkvSCIMPibpwvD-A"/>
+</div>
+</header>
+<main class="max-w-lg mx-auto px-margin-mobile pt-6 pb-24 space-y-6">
+<!-- Hero Image -->
+<div class="relative w-full h-40 rounded-xl overflow-hidden shadow-sm">
+<img alt="Tasks Header" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfXIlkSbbta5YA_JoFMukFqkdHYNG0KIXZFBi3WVhROJ3ysSO0AQtRYhTmLByKqBLHjh58ciEBKF_tdm1RsBPhjZrTEWW2mrfZdtknzFeB-Lfi526Ieqc8ZaE2ugTO0m7nmnrcNC3PKgMCpwRsDnxgcHqTUMS87y5ODP84F_UDtSN9S8g_OtgWec-AZvzd2A9AbCcj-VDP3dUU3y_XUPiQC-g6EQEMmdBnbXGZE0f_1Esbt6spp9grva5lmhJXfSqIgfIkCbSEZg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-primary/90 text-on-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Shared Growth</span>
+</div>
+</div>
+<!-- Form -->
+<section class="space-y-6">
+<!-- Title -->
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface-variant ml-1">Task Title</label>
+<input class="w-full bg-surface-container-lowest border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary rounded-xl px-4 py-3 outline-none transition-all placeholder:text-outline/50" placeholder="e.g., Buy organic baby formula" type="text"/>
+</div>
+<!-- Description -->
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface-variant ml-1">Description</label>
+<textarea class="w-full bg-surface-container-lowest border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary rounded-xl px-4 py-3 outline-none transition-all placeholder:text-outline/50" placeholder="Add any details or specific instructions..." rows="3"></textarea>
+</div>
+<!-- Assign To -->
+<div class="space-y-3">
+<div class="flex justify-between items-center ml-1">
+<label class="font-label-lg text-label-lg text-on-surface-variant">Assign To</label>
+<span class="flex items-center gap-1 text-[10px] text-secondary font-bold uppercase tracking-tighter bg-secondary-fixed/30 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[12px]">sync</span> Synced
+</span>
+</div>
+<div class="grid grid-cols-3 p-1 bg-surface-container-high rounded-xl relative">
+<button class="assign-btn flex flex-col items-center gap-1 py-3 z-10 transition-colors text-primary font-bold" onclick="selectAssign(this)">
+<span class="material-symbols-outlined">woman</span><span class="text-[10px] font-bold">Me</span>
+</button>
+<button class="assign-btn flex flex-col items-center gap-1 py-3 z-10 transition-colors text-on-surface-variant" onclick="selectAssign(this)">
+<span class="material-symbols-outlined">man</span><span class="text-[10px] font-bold">Partner</span>
+</button>
+<button class="assign-btn flex flex-col items-center gap-1 py-3 z-10 transition-colors text-on-surface-variant" onclick="selectAssign(this)">
+<span class="material-symbols-outlined">diversity_1</span><span class="text-[10px] font-bold">Both</span>
+</button>
+<div class="absolute top-1 left-1 bottom-1 w-[32%] bg-surface-container-lowest shadow-sm rounded-lg transition-all duration-300 ease-out" id="assign-pill"></div>
+</div>
+</div>
+<!-- Date Picker -->
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg text-on-surface-variant ml-1">Due Date</label>
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-transparent hover:border-primary-fixed transition-all cursor-pointer">
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-sm text-headline-sm text-on-surface">September 2024</span>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-outline">chevron_left</span>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center mb-2">
+<div class="text-[10px] text-outline font-bold">M</div><div class="text-[10px] text-outline font-bold">T</div>
+<div class="text-[10px] text-outline font-bold">W</div><div class="text-[10px] text-outline font-bold">T</div>
+<div class="text-[10px] text-outline font-bold">F</div><div class="text-[10px] text-outline font-bold">S</div>
+<div class="text-[10px] text-outline font-bold">S</div>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center">
+<div class="p-2 text-on-surface-variant/30 text-xs">28</div><div class="p-2 text-on-surface-variant/30 text-xs">29</div>
+<div class="p-2 text-on-surface-variant/30 text-xs">30</div><div class="p-2 text-on-surface-variant/30 text-xs">31</div>
+<div class="p-2 text-on-surface text-xs font-medium">1</div><div class="p-2 text-on-surface text-xs font-medium">2</div>
+<div class="p-2 text-on-surface text-xs font-medium">3</div>
+<div class="p-2 bg-primary text-on-primary rounded-lg text-xs font-bold shadow-md">14</div>
+<div class="p-2 text-on-surface text-xs font-medium">15</div><div class="p-2 text-on-surface text-xs font-medium">16</div>
+</div>
+</div>
+</div>
+<!-- Nudge Toggle -->
+<div class="flex items-center justify-between bg-surface-container-low p-4 rounded-xl">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-secondary-fixed/50 rounded-full flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">notifications_active</span>
+</div>
+<div>
+<p class="font-body-lg text-on-surface font-semibold">Add a Nudge</p>
+<p class="text-[10px] text-on-surface-variant">Notify your partner immediately</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Save Button -->
+<button class="w-full bg-primary text-on-primary font-headline-sm text-headline-sm py-4 rounded-2xl shadow-lg hover:shadow-xl active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 mt-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">save</span>
+Save Task
+</button>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full flex justify-around items-center px-4 py-3 bg-surface-container pb-safe rounded-t-xl shadow-lg z-50">
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:opacity-80 transition-all" href="#">
+<span class="material-symbols-outlined">home</span><span class="font-label-lg text-label-lg">Timeline</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">checklist</span><span class="font-label-lg text-label-lg">Tasks</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:opacity-80 transition-all" href="#">
+<span class="material-symbols-outlined">description</span><span class="font-label-lg text-label-lg">Notes</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:opacity-80 transition-all" href="#">
+<span class="material-symbols-outlined">settings</span><span class="font-label-lg text-label-lg">Settings</span>
+</a>
+</nav>
+<script>
+        function selectAssign(element) {
+            const buttons = document.querySelectorAll('.assign-btn');
+            const pill = document.getElementById('assign-pill');
+            const index = Array.from(buttons).indexOf(element);
+            pill.style.left = `calc(${(index * 33.33) + 0.5}%)`;
+            buttons.forEach(btn => {
+                btn.classList.remove('text-primary', 'font-bold');
+                btn.classList.add('text-on-surface-variant');
+            });
+            element.classList.add('text-primary', 'font-bold');
+            element.classList.remove('text-on-surface-variant');
+        }
+        const inputs = document.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => input.parentElement.querySelector('label')?.classList.add('text-primary'));
+            input.addEventListener('blur', () => input.parentElement.querySelector('label')?.classList.remove('text-primary'));
+        });
+    </script>
+</body></html>

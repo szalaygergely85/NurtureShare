@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_mobile">
+
+        <!-- Invite partner nudge (hidden once partner is connected) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_invite_partner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/secondary_container"
+            app:cardCornerRadius="@dimen/radius_lg"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="12dp"
+                    android:text="Invite your partner — they'll get advice tailored to their role too 💬"
+                    android:textColor="@color/on_secondary_container"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="3dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_invite_partner"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invite"
+                    android:textSize="12sp"
+                    app:cornerRadius="20dp"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+
+        <!-- Week headline -->
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Week 24"
+            android:textColor="@color/primary"
+            android:textSize="36sp"
+            android:fontFamily="@font/quicksand"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_trimester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Second Trimester"
+            android:textColor="@color/on_surface_variant"
+            android:textSize="15sp"/>
+
+        <!-- Progress bar + labels -->
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progress_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:max="100"
+            android:progress="60"
+            app:indicatorColor="@color/primary"
+            app:trackColor="@color/surface_variant"
+            app:trackCornerRadius="8dp"
+            app:trackThickness="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_percent_complete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="60% Complete"
+                android:textColor="@color/on_surface_variant"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_weeks_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="16 weeks left"
+                android:textColor="@color/on_surface_variant"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <!-- Baby Growth Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_baby_growth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/surface_container_lowest"
+            app:cardCornerRadius="@dimen/radius_lg"
+            app:cardElevation="2dp"
+            app:strokeWidth="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/bar_baby_growth"
+                    android:layout_width="4dp"
+                    android:layout_height="0dp"
+                    android:background="@color/secondary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/bar_baby_growth"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <!-- Card header: icon container + label -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/bg_icon_container_secondary"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baby"
+                            android:contentDescription="Baby icon"
+                            app:tint="@color/secondary"/>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BABY GROWTH"
+                            android:textColor="@color/secondary"
+                            android:textSize="11sp"
+                            android:letterSpacing="0.08"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_baby_size"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Size of a corn"
+                            android:textColor="@color/on_surface"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/quicksand"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_baby_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your baby is developing rapidly this week..."
+                    android:textColor="@color/on_surface_variant"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp"/>
+
+                <!-- Size comparison image placeholder -->
+                <FrameLayout
+                    android:id="@+id/frame_baby_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_baby_image_placeholder"
+                    android:clipToOutline="true">
+
+                    <ImageView
+                        android:id="@+id/iv_baby_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Baby size comparison"
+                        android:src="@drawable/ic_baby"
+                        app:tint="@color/primary_fixed_dim"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/bg_image_tag"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginEnd="4dp"
+                            android:src="@drawable/ic_baby"
+                            android:contentDescription=""
+                            app:tint="@color/secondary"/>
+
+                        <TextView
+                            android:id="@+id/tv_size_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Size reference"
+                            android:textColor="@color/on_secondary_container"
+                            android:textSize="11sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Checklist Card (hospital bag / labor signs / newborn essentials) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_checklist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/surface_container_lowest"
+            app:cardCornerRadius="@dimen/radius_lg"
+            app:cardElevation="2dp"
+            app:strokeWidth="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/bar_checklist"
+                    android:layout_width="4dp"
+                    android:layout_height="0dp"
+                    android:background="@color/tertiary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/bar_checklist"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@drawable/bg_icon_container_tertiary"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_checklist"
+                                android:contentDescription="Checklist icon"
+                                app:tint="@color/tertiary"/>
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tv_checklist_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="CHECKLIST"
+                            android:textColor="@color/tertiary"
+                            android:textSize="11sp"
+                            android:letterSpacing="0.08"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_checklist_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Suggested Actions Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_suggested_actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/surface_container_lowest"
+            app:cardCornerRadius="@dimen/radius_lg"
+            app:cardElevation="2dp"
+            app:strokeWidth="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/bar_suggested_actions"
+                    android:layout_width="4dp"
+                    android:layout_height="0dp"
+                    android:background="@color/primary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/bar_suggested_actions"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <!-- Card header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/bg_icon_container_primary"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_checklist"
+                            android:contentDescription="Tasks icon"
+                            app:tint="@color/primary"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_suggested_actions_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SUGGESTED ACTIONS"
+                        android:textColor="@color/primary"
+                        android:textSize="11sp"
+                        android:letterSpacing="0.08"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_suggested_actions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_add_as_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primary"
+                    android:text="@string/btn_add_as_task"
+                    android:textColor="@color/on_primary"
+                    app:cornerRadius="28dp"/>
+
+            </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Partner Focus Card (left border only) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_partner_focus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="@color/surface_container_lowest"
+            app:cardCornerRadius="@dimen/radius_lg"
+            app:cardElevation="2dp"
+            app:strokeWidth="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Left accent border -->
+                <View
+                    android:id="@+id/view_left_border"
+                    android:layout_width="4dp"
+                    android:layout_height="0dp"
+                    android:background="@color/secondary_container"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/view_left_border"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/bg_icon_container_tertiary"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_favorite"
+                                android:contentDescription="Partner icon"
+                                app:tint="@color/tertiary"/>
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="PARTNER FOCUS"
+                            android:textColor="@color/on_secondary_fixed_variant"
+                            android:textSize="11sp"
+                            android:letterSpacing="0.08"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_partner_focus_tip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Support your partner this week by..."
+                        android:textColor="@color/on_surface_variant"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

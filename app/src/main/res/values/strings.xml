@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">NurtureShare</string>
+    <string name="app_tagline">Together from the start</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_timeline">Timeline</string>
+    <string name="nav_tasks">Tasks</string>
+    <string name="nav_notes">Notes</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Auth -->
+    <string name="hint_email">Email address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Your name</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_create_account">Create Account</string>
+    <string name="btn_back_to_login">Back to Login</string>
+    <string name="error_email_empty">Please enter your email</string>
+    <string name="error_password_empty">Please enter your password</string>
+    <string name="error_name_empty">Please enter your name</string>
+    <string name="error_login_failed">Login failed. Please check your credentials.</string>
+    <string name="error_register_failed">Registration failed. Please try again.</string>
+
+    <!-- Timeline -->
+    <string name="timeline_week_format">Week %d</string>
+    <string name="timeline_baby_age_format">%d weeks old</string>
+    <string name="timeline_baby_age_months_format">%d months old</string>
+    <string name="timeline_baby_age_years_format">%d years old</string>
+    <string name="timeline_progress_format">%d%% Complete</string>
+    <string name="timeline_weeks_left_format">%d weeks left</string>
+    <string name="timeline_weeks_left_year_format">%d weeks of year 1</string>
+    <string name="timeline_baby_growth">Baby\'s Growth</string>
+    <string name="timeline_suggested_actions">Suggested Actions</string>
+    <string name="timeline_partner_focus">Partner Focus</string>
+    <string name="btn_add_as_task">Add as Task</string>
+    <string name="timeline_error">Failed to load timeline. Please retry.</string>
+    <string name="retry">Retry</string>
+
+    <!-- Tasks -->
+    <string name="tasks_filter_all">All</string>
+    <string name="tasks_filter_me">Me</string>
+    <string name="tasks_filter_partner">Partner</string>
+    <string name="tasks_filter_both">Both</string>
+    <string name="tasks_filter_completed">Completed</string>
+    <string name="btn_add_task">Add Task</string>
+    <string name="tasks_team_progress">Team Progress</string>
+    <string name="tasks_progress_format">%d of %d complete</string>
+    <string name="tasks_error">Failed to load tasks.</string>
+
+    <!-- Add Task -->
+    <string name="add_task_title">New Task</string>
+    <string name="hint_task_title">Task title</string>
+    <string name="hint_task_description">Description (optional)</string>
+    <string name="label_assign_to">Assign To</string>
+    <string name="assign_me">Me</string>
+    <string name="assign_partner">Partner</string>
+    <string name="assign_both">Both</string>
+    <string name="label_due_date">Due Date</string>
+    <string name="hint_select_date">Select a date</string>
+    <string name="label_add_nudge">Add a Nudge</string>
+    <string name="nudge_description">Remind your partner about this task</string>
+    <string name="btn_save_task">Save Task</string>
+    <string name="error_task_title_empty">Please enter a task title</string>
+    <string name="task_created_success">Task created!</string>
+    <string name="task_create_error">Failed to create task.</string>
+    <string name="nudge_sent">Nudge sent to your partner!</string>
+
+    <!-- Notes -->
+    <string name="notes_tab_ideas">Ideas</string>
+    <string name="notes_tab_shopping">Shopping</string>
+    <string name="notes_tab_questions">Questions</string>
+    <string name="btn_add_note">Add Note</string>
+    <string name="dialog_new_note_title">New Note</string>
+    <string name="hint_note_title">Title…</string>
+    <string name="label_note_category">Category</string>
+    <string name="note_synced">Synced</string>
+    <string name="note_item_urgent">URGENT</string>
+    <string name="notes_error">Failed to load notes.</string>
+    <string name="note_deleted">Note deleted</string>
+    <string name="note_delete_confirm_title">Delete Note</string>
+    <string name="note_delete_confirm_message">Are you sure you want to delete this note?</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_tab_know">I know my due date</string>
+    <string name="onboarding_tab_calculate">Calculate it</string>
+    <string name="onboarding_lmp_hint">Tap to select last period date</string>
+    <string name="onboarding_lmp_label">First day of last period</string>
+    <string name="onboarding_result_label">Estimated due date</string>
+    <string name="onboarding_weeks_along">%d weeks along</string>
+    <string name="onboarding_due_date_note">Due dates can shift — your doctor will confirm.</string>
+
+    <!-- Settings -->
+    <string name="settings_partner_section">Partner</string>
+    <string name="settings_no_partner">No partner connected</string>
+    <string name="settings_synced">SYNCED</string>
+    <string name="settings_pairing_details">Pairing Details</string>
+    <string name="settings_couple_id_label">Couple ID</string>
+    <string name="btn_share_invite_code">Share Invite Code</string>
+    <string name="settings_pair_with_partner">Pair with Partner</string>
+    <string name="hint_pairing_code">Enter partner\'s pairing code</string>
+    <string name="btn_pair">Pair</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_notifications_label">Enable Notifications</string>
+    <string name="settings_baby_mode">App Mode</string>
+    <string name="mode_pregnancy">Pregnancy</string>
+    <string name="mode_baby">Baby</string>
+    <string name="btn_save_settings">Save Settings</string>
+    <string name="settings_saved">Settings saved!</string>
+    <string name="settings_error">Failed to load settings.</string>
+    <string name="code_copied">Copied to clipboard!</string>
+    <string name="paired_success">Successfully paired with partner!</string>
+    <string name="pair_error">Failed to pair. Please check the code.</string>
+    <string name="btn_logout">Log Out</string>
+    <string name="logout_confirm_title">Log Out</string>
+    <string name="logout_confirm_message">Are you sure you want to log out?</string>
+    <string name="settings_profile_section">Your Profile</string>
+    <string name="settings_pregnancy_section">Pregnancy</string>
+    <string name="settings_due_date_label">Due Date</string>
+    <string name="settings_week_label">Current Week</string>
+    <string name="btn_edit_due_date">Edit Due Date</string>
+    <string name="due_date_updated">Due date updated!</string>
+    <string name="settings_baby_info_section">Baby Info</string>
+    <string name="settings_baby_gender_label">Gender</string>
+    <string name="settings_baby_name_label">Baby\'s Name</string>
+    <string name="hint_baby_name">e.g. Oliver (optional)</string>
+    <string name="gender_boy">Boy</string>
+    <string name="gender_girl">Girl</string>
+    <string name="gender_unknown">Unknown</string>
+    <string name="btn_save_baby_info">Save Baby Info</string>
+    <string name="baby_info_updated">Baby info saved!</string>
+    <string name="edit_task_title">Edit Task</string>
+    <string name="btn_save_changes">Save Changes</string>
+    <string name="task_updated_success">Task updated!</string>
+    <string name="task_update_error">Failed to update task.</string>
+    <string name="task_deleted_success">Task deleted!</string>
+    <string name="task_delete_error">Failed to delete task.</string>
+    <string name="tasks_empty_heading">No tasks yet</string>
+    <string name="tasks_empty_subtitle">Add tasks from timeline suggestions, or tap + to create one</string>
+    <string name="btn_delete_task">Delete task</string>
+    <string name="tasks_empty"> </string>
+    <string name="notes_empty">No notes yet.\nTap + to create your first note.</string>
+    <string name="add_note_item">Add item</string>
+    <string name="hint_note_item">New item…</string>
+    <string name="note_item_added">Item added!</string>
+    <string name="task_delete_confirm_title">Delete task</string>
+    <string name="task_delete_confirm_message">This task will be permanently removed.</string>
+    <string name="tasks_hint_add_more">All caught up? Add a new task for the upcoming week to stay ahead.</string>
+    <string name="error_email_invalid">Please enter a valid email address</string>
+    <string name="error_password_too_short">Password must be at least 6 characters</string>
+    <string name="notes_add_item_error">Failed to add item</string>
+    <string name="notes_delete_error">Failed to delete note</string>
+    <string name="settings_role_mother">Mother</string>
+    <string name="settings_role_partner">Partner</string>
+    <string name="settings_share_invite_message">Join me on NurtureShare! Use my code: %s</string>
+    <string name="settings_no_pairing_code">No pairing code available yet</string>
+    <string name="settings_pregnancy_partner_label">Partner\'s Pregnancy</string>
+    <string name="settings_baby_mode_desc">Switch to Baby mode after your little one arrives</string>
+    <string name="notes_tab_medical">Medical</string>
+    <string name="add_note_screen_title">New Note</string>
+    <string name="btn_save">Save</string>
+    <string name="hint_note_body">Write your note…</string>
+    <string name="note_share_with_partner">Share with Partner</string>
+    <string name="note_share_description">Your partner can view and edit this note</string>
+    <string name="note_synced_with_partner">Synced with partner</string>
+    <string name="error_note_title_empty">Please enter a note title</string>
+    <string name="note_created_success">Note created!</string>
+    <string name="note_create_error">Failed to create note.</string>
+    <string name="note_tag_partner">Tag Partner</string>
+    <string name="task_detail_title">Task Detail</string>
+    <string name="task_comments">Comments</string>
+    <string name="task_comments_count">Comments (%d)</string>
+    <string name="task_no_comments">No comments yet. Be the first!</string>
+    <string name="hint_add_comment">Add a comment…</string>
+    <string name="comment_add_error">Failed to add comment.</string>
+    <string name="task_share_description">Your partner can view this task</string>
+    <string name="login_tagline">Grow Together</string>
+    <string name="btn_forgot_password">Forgot Password?</string>
+    <string name="coming_soon">This feature is coming soon!</string>
+    <string name="login_footer">Part of your journey, together.</string>
+    <string name="or_continue_with">OR CONTINUE WITH</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Leaf / sprout shape representing growth -->
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M54,28 C54,28 36,38 36,54 C36,63.9 44.1,72 54,72 C63.9,72 72,63.9 72,54 C72,38 54,28 54,28 Z" />
+    <!-- Stem -->
+    <path
+        android:fillColor="#ffffff"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="3"
+        android:pathData="M54,72 L54,82" />
+    <!-- Small leaf on left -->
+    <path
+        android:fillColor="#cceacf"
+        android:pathData="M54,60 C54,60 44,56 42,48 C46,50 54,60 54,60 Z" />
+</vector>

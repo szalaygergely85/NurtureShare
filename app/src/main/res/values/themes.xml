@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NurtureShare" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
+
+        <!-- Secondary -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="colorSecondaryContainer">@color/secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/on_secondary_container</item>
+
+        <!-- Tertiary -->
+        <item name="colorTertiary">@color/tertiary</item>
+        <item name="colorOnTertiary">@color/on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/on_tertiary_container</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/on_error</item>
+
+        <!-- Surface -->
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+
+        <!-- Bottom nav style override -->
+        <item name="bottomNavigationStyle">@style/Widget.NurtureShare.BottomNavigationView</item>
+
+        <!-- Window -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Typography — Quicksand for headlines, Plus Jakarta Sans for body -->
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.NurtureShare.DisplayLarge</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.NurtureShare.DisplayMedium</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.NurtureShare.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.NurtureShare.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.NurtureShare.HeadlineSmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.NurtureShare.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.NurtureShare.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.NurtureShare.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.NurtureShare.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.NurtureShare.BodyMedium</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.NurtureShare.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.NurtureShare.LabelMedium</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.NurtureShare.LabelSmall</item>
+    </style>
+
+    <!-- Bottom nav: override icon/text tint -->
+    <style name="Widget.NurtureShare.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconTint">@color/nav_item_color</item>
+        <item name="itemTextColor">@color/nav_item_color</item>
+    </style>
+
+    <!-- Toolbar theme overlay: tints menu icons to primary -->
+    <style name="ThemeOverlay.NurtureShare.Toolbar" parent="ThemeOverlay.Material3.Toolbar.Surface">
+        <item name="colorControlNormal">@color/primary</item>
+    </style>
+
+    <!-- Headline styles → Quicksand -->
+    <style name="TextAppearance.NurtureShare.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:fontFamily">@font/quicksand</item>
+    </style>
+    <style name="TextAppearance.NurtureShare.DisplayMedium" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:fontFamily">@font/quicksand</item>
+    </style>
+    <style name="TextAppearance.NurtureShare.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:fontFamily">@font/quicksand</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textFontWeight">700</item>
+    </style>
+    <style name="TextAppearance.NurtureShare.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:fontFamily">@font/quicksand</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textFontWeight">600</item>
+    </style>
+    <style name="TextAppearance.NurtureShare.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:fontFamily">@font/quicksand</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textFontWeight">600</item>
+    </style>
+    <style name="TextAppearance.NurtureShare.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:fontFamily">@font/quicksand</item>
+        <item name="android:textFontWeight">600</item>
+    </style>
+    <style name="TextAppearance.NurtureShare.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:fontFamily">@font/quicksand</item>
+    </style>
+    <style name="TextAppearance.NurtureShare.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:fontFamily">@font/quicksand</item>
+    </style>
+
+    <!-- Body / Label styles → Plus Jakarta Sans -->
+    <style name="TextAppearance.NurtureShare.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="TextAppearance.NurtureShare.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.NurtureShare.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textFontWeight">600</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+    <style name="TextAppearance.NurtureShare.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+    </style>
+    <style name="TextAppearance.NurtureShare.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+    </style>
+</resources>

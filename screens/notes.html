@@ -1,0 +1,247 @@
+<!-- Shared Notes -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nurture Share - Shared Notes</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#8daa91",
+                    "on-secondary-container": "#793823",
+                    "tertiary-fixed": "#e6e2df",
+                    "tertiary-fixed-dim": "#cac6c3",
+                    "primary-fixed": "#cceacf",
+                    "on-primary-fixed": "#062010",
+                    "primary": "#4a654f",
+                    "on-tertiary-fixed-variant": "#484644",
+                    "on-surface": "#1b1c1c",
+                    "surface-dim": "#dbd9d9",
+                    "on-tertiary-fixed": "#1c1b1a",
+                    "surface-tint": "#4a654f",
+                    "surface-container-highest": "#e4e2e2",
+                    "secondary-fixed-dim": "#ffb59e",
+                    "secondary-fixed": "#ffdbd0",
+                    "inverse-on-surface": "#f2f0f0",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "outline": "#737972",
+                    "surface-container-low": "#f5f3f3",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#334d38",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#ffa589",
+                    "background": "#fbf9f8",
+                    "on-background": "#1b1c1c",
+                    "surface-variant": "#e4e2e2",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#605e5c",
+                    "surface": "#fbf9f8",
+                    "on-primary-container": "#253f2b",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#3a0b00",
+                    "surface-bright": "#fbf9f8",
+                    "tertiary-container": "#a6a2a0",
+                    "on-secondary-fixed-variant": "#733420",
+                    "outline-variant": "#c2c8c0",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#3a3937",
+                    "primary-fixed-dim": "#b0ceb4",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#eae8e7",
+                    "surface-container": "#efeded",
+                    "inverse-surface": "#303030",
+                    "inverse-primary": "#b0ceb4",
+                    "secondary": "#914b35",
+                    "on-surface-variant": "#424842"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "card-padding": "20px",
+                    "margin-tablet": "24px",
+                    "margin-mobile": "16px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Quicksand"],
+                    "label-lg": ["Plus Jakarta Sans"],
+                    "headline-sm": ["Quicksand"],
+                    "headline-md": ["Quicksand"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Quicksand"]
+            },
+            "fontSize": {
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "label-lg": ["12px", {"lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "600"}],
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-note {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+    </style>
+<style>body { min-height: max(884px, 100dvh); }</style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-24">
+<!-- Top App Bar -->
+<header class="bg-surface sticky top-0 z-40 shadow-sm w-full max-w-lg mx-auto flex items-center justify-between px-margin-mobile py-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-fixed">
+<img alt="Couple shared profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF8Of1r8lIXkIGiH3NfQAVUvICAxFHvmm6vMNxCz7qn4RdoU5TRFSEUCJIGBHWe1gQj-1HGxCZ2wXdOeoXGwMrrJRw3cQrfWk_u44XaqBEKVJoOrW38ImWRGNLWHgFrqTbXe1T6j3tGRYJaVy1WlltsVgJMYPYe0MJovaKRV4rENhE8f23C7dSn7KDENT6DdRpDoAfVCcYcBKSCQRPJE3_8jwCcAa-RpjTcdN3PynJrCg5wgSPitHPdKYLyYHIsFs7nJ9jRaTbyw"/>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary">Nurture Share</h1>
+</div>
+<button class="text-primary hover:opacity-80 scale-95 active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined">group_add</span>
+</button>
+</header>
+<main class="max-w-lg mx-auto px-margin-mobile pt-6">
+<!-- Tab Navigation -->
+<div class="relative flex justify-between items-center mb-8 bg-surface-container-low rounded-xl p-1">
+<button class="flex-1 py-3 text-center font-label-lg text-label-lg text-primary font-bold z-10 transition-colors" onclick="switchTab(this, 'ideas')">Ideas</button>
+<button class="flex-1 py-3 text-center font-label-lg text-label-lg text-on-surface-variant z-10 transition-colors" onclick="switchTab(this, 'shopping')">Shopping</button>
+<button class="flex-1 py-3 text-center font-label-lg text-label-lg text-on-surface-variant z-10 transition-colors" onclick="switchTab(this, 'questions')">Questions</button>
+<div class="absolute h-[calc(100%-8px)] top-1 left-1 bg-white rounded-lg shadow-sm transition-all duration-300 ease-out" id="tab-pill" style="width: calc(33.33% - 4px);"></div>
+</div>
+<!-- Notes -->
+<div class="space-y-6">
+<!-- Baby Names -->
+<div class="glass-note p-card-padding rounded-xl shadow-sm border-l-4 border-primary">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Baby names ideas</h3>
+<p class="font-label-lg text-label-lg text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sync</span> Synced with Partner
+</p>
+</div>
+<span class="material-symbols-outlined text-outline">more_vert</span>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center gap-3"><div class="w-5 h-5 rounded-full border-2 border-primary-fixed-dim"></div><span class="font-body-lg text-body-lg text-on-surface">Emma</span></li>
+<li class="flex items-center gap-3"><div class="w-5 h-5 rounded-full border-2 border-primary-fixed-dim"></div><span class="font-body-lg text-body-lg text-on-surface">Noah</span></li>
+<li class="flex items-center gap-3"><div class="w-5 h-5 rounded-full border-2 border-primary-fixed-dim"></div><span class="font-body-lg text-body-lg text-on-surface">Luca</span></li>
+</ul>
+</div>
+<!-- Shopping List -->
+<div class="glass-note p-card-padding rounded-xl shadow-sm border-l-4 border-secondary">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-secondary-container mb-1">Shopping list</h3>
+<p class="font-label-lg text-label-lg text-on-surface-variant">3 items remaining</p>
+</div>
+<span class="material-symbols-outlined text-outline">shopping_cart</span>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_box_outline_blank</span>
+<span class="font-body-lg text-body-lg text-on-surface">diapers</span>
+</div>
+<span class="px-2 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded text-[10px] font-bold uppercase tracking-wider">Urgent</span>
+</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_box_outline_blank</span><span class="font-body-lg text-body-lg text-on-surface">stroller</span></li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_box_outline_blank</span><span class="font-body-lg text-body-lg text-on-surface">bottles</span></li>
+</ul>
+</div>
+<!-- Doctor Questions -->
+<div class="glass-note p-card-padding rounded-xl shadow-sm border-l-4 border-tertiary">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-tertiary mb-1">Doctor questions</h3>
+<p class="font-label-lg text-label-lg text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span> Appointment: Thursday
+</p>
+</div>
+<span class="material-symbols-outlined text-outline">help</span>
+</div>
+<div class="space-y-4">
+<div class="p-3 bg-surface-container-low rounded-lg"><p class="font-body-md text-body-md text-on-surface italic">"Is swimming safe?"</p></div>
+<div class="p-3 bg-surface-container-low rounded-lg"><p class="font-body-md text-body-md text-on-surface italic">"Vitamin recommendations?"</p></div>
+</div>
+</div>
+</div>
+<!-- Weekly Insight Bento -->
+<div class="mt-8 grid grid-cols-2 gap-4">
+<div class="col-span-2 p-card-padding bg-primary-container text-on-primary-container rounded-2xl flex items-center justify-between overflow-hidden relative">
+<div class="z-10">
+<p class="font-label-lg text-label-lg opacity-90 uppercase tracking-widest mb-1">Weekly Insight</p>
+<h4 class="font-headline-sm text-headline-sm">Our 24th Week</h4>
+</div>
+<span class="material-symbols-outlined text-5xl opacity-20 absolute -right-2 -bottom-2 rotate-12">favorite</span>
+<button class="z-10 bg-on-primary-container text-white px-4 py-2 rounded-full font-label-lg text-label-lg">View Note</button>
+</div>
+</div>
+</main>
+<!-- FAB -->
+<button class="fixed bottom-24 right-6 w-14 h-14 bg-primary text-white rounded-2xl shadow-xl flex items-center justify-center hover:scale-105 active:scale-95 transition-all duration-200 z-50">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full flex justify-around items-center px-4 py-3 bg-surface-container pb-safe z-50 rounded-t-xl shadow-lg">
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined">home</span><span class="font-label-lg text-label-lg mt-1">Timeline</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined">checklist</span><span class="font-label-lg text-label-lg mt-1">Tasks</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">description</span><span class="font-label-lg text-label-lg mt-1">Notes</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined">settings</span><span class="font-label-lg text-label-lg mt-1">Settings</span>
+</a>
+</nav>
+<script>
+        function switchTab(element, tabId) {
+            const tabs = element.parentElement.querySelectorAll('button');
+            const pill = document.getElementById('tab-pill');
+            tabs.forEach((tab, index) => {
+                tab.classList.remove('text-primary', 'font-bold');
+                tab.classList.add('text-on-surface-variant');
+                if (tab === element) {
+                    pill.style.transform = `translateX(calc(${index * 100}% + ${index * 4}px))`;
+                    tab.classList.add('text-primary', 'font-bold');
+                    tab.classList.remove('text-on-surface-variant');
+                }
+            });
+            const container = document.querySelector('main > div.space-y-6');
+            container.style.opacity = '0';
+            container.style.transform = 'translateY(10px)';
+            setTimeout(() => {
+                container.style.transition = 'all 0.4s ease';
+                container.style.opacity = '1';
+                container.style.transform = 'translateY(0)';
+            }, 50);
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('tab-pill').style.width = 'calc(33.33% - 4px)';
+        });
+    </script>
+</body></html>

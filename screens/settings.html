@@ -1,0 +1,251 @@
+<!-- Settings & Pairing -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nurture Share - Settings &amp; Pairing</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#8daa91",
+                    "on-secondary-container": "#793823",
+                    "tertiary-fixed": "#e6e2df",
+                    "tertiary-fixed-dim": "#cac6c3",
+                    "primary-fixed": "#cceacf",
+                    "on-primary-fixed": "#062010",
+                    "primary": "#4a654f",
+                    "on-tertiary-fixed-variant": "#484644",
+                    "on-surface": "#1b1c1c",
+                    "surface-dim": "#dbd9d9",
+                    "on-tertiary-fixed": "#1c1b1a",
+                    "surface-tint": "#4a654f",
+                    "surface-container-highest": "#e4e2e2",
+                    "secondary-fixed-dim": "#ffb59e",
+                    "secondary-fixed": "#ffdbd0",
+                    "inverse-on-surface": "#f2f0f0",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "outline": "#737972",
+                    "surface-container-low": "#f5f3f3",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#334d38",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#ffa589",
+                    "background": "#fbf9f8",
+                    "on-background": "#1b1c1c",
+                    "surface-variant": "#e4e2e2",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#605e5c",
+                    "surface": "#fbf9f8",
+                    "on-primary-container": "#253f2b",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#3a0b00",
+                    "surface-bright": "#fbf9f8",
+                    "tertiary-container": "#a6a2a0",
+                    "on-secondary-fixed-variant": "#733420",
+                    "outline-variant": "#c2c8c0",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#3a3937",
+                    "primary-fixed-dim": "#b0ceb4",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#eae8e7",
+                    "surface-container": "#efeded",
+                    "inverse-surface": "#303030",
+                    "inverse-primary": "#b0ceb4",
+                    "secondary": "#914b35",
+                    "on-surface-variant": "#424842"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "card-padding": "20px",
+                    "margin-tablet": "24px",
+                    "margin-mobile": "16px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Quicksand"],
+                    "label-lg": ["Plus Jakarta Sans"],
+                    "headline-sm": ["Quicksand"],
+                    "headline-md": ["Quicksand"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Quicksand"]
+            },
+            "fontSize": {
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "label-lg": ["12px", {"lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "600"}],
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #fbf9f8; -webkit-tap-highlight-color: transparent; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+<style>body { min-height: max(884px, 100dvh); }</style>
+</head>
+<body class="font-body-md text-on-background min-h-screen pb-24">
+<!-- Top App Bar -->
+<header class="bg-surface sticky top-0 z-40 shadow-sm">
+<div class="flex items-center justify-between px-margin-mobile py-2 w-full max-w-lg mx-auto h-16">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container/20 flex items-center justify-center">
+<img alt="Couple shared profile picture" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv3tHKK4BhYVjylZuiGfG-1irkN0UwXLjW8-vGmQFiFKxuif6mwoGUADUiNLI6ETBKu8foqCGHL8WIZW0PgjY9YrnUtACWvcMK_MqCWwtbnh0Tf_tdu8vd96si7MtiZ_pS7KZrYTsIvOYjFyAqy7_UvtU6s-FabdkYvVUovDJiFdmzXyxZyBylhvJfqqxQ1YwiH64Wq_i9C_D-oPT3-kA6OTHXUgX_e1XHfg4ajwBPJvPOS1e1tBga0bus8UoWQHuza2gIqbJ-mA"/>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary">Nurture Share</h1>
+</div>
+<button class="text-primary hover:opacity-80 scale-95 active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined">group_add</span>
+</button>
+</div>
+</header>
+<main class="max-w-lg mx-auto px-margin-mobile pt-6 space-y-6">
+<!-- Couple Status -->
+<section>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-4">Couple Status</h2>
+<div class="bg-surface-container-lowest rounded-xl p-card-padding shadow-[0px_4px_12px_rgba(0,0,0,0.04)] flex items-center justify-between border-l-4 border-primary">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img alt="Alex's profile" class="w-12 h-12 rounded-full border-2 border-primary-container/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXE0gNqt_xswNvQPgjCYZXzbJDoj0WlwjUyP1LaLAlhvSB-dcJAvWAAkM6FLDbYPGOJPpOZmE1q9uXCzdA7AKa47jWYN_DLFDunR-WsvnRIcJGy447m8klZ-BKvkpkO6J8e5NUJw-S-weJKJXsIkuYJPwi7mGbFxJc-h54lB_3ZSXTu3u7-NonIhxAVCa6v1Vqlr4g3FYRa3E33ufdOQLOvmzLsfYYKGIO8ABo0WMPEh8lvc1CC63r8_GJSPSYCkcBd2PcKn3g_Q"/>
+<div class="absolute bottom-0 right-0 w-3 h-3 bg-primary rounded-full border-2 border-surface-container-lowest shadow-sm"></div>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-primary uppercase tracking-wider">Currently Active</p>
+<p class="font-body-lg text-body-lg text-on-surface font-semibold">Connected with Alex</p>
+</div>
+</div>
+<div class="bg-primary-container/10 px-3 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'wght' 600;">sync</span>
+<span class="text-[10px] font-bold text-primary">SYNCED</span>
+</div>
+</div>
+</section>
+<!-- Pairing Section -->
+<section class="bg-surface-container-lowest rounded-xl p-card-padding shadow-[0px_4px_12px_rgba(0,0,0,0.04)] space-y-4">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-[18px] text-on-surface">Pairing Details</h3>
+<p class="font-body-md text-on-surface-variant mt-1">Manage your shared account access</p>
+</div>
+<span class="material-symbols-outlined text-secondary">link</span>
+</div>
+<div class="bg-background rounded-lg p-4 border border-outline-variant/30 flex items-center justify-between">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface-variant block">Couple ID</span>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-widest uppercase">#A9X32</span>
+</div>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-full font-label-lg text-label-lg active:scale-95 transition-transform" onclick="copyToClipboard()">
+  Share Invite Code
+</button>
+</div>
+</section>
+<!-- App Settings -->
+<section class="space-y-3">
+<h3 class="font-label-lg text-label-lg text-on-surface-variant px-1">APP SETTINGS</h3>
+<div class="space-y-2">
+<!-- Notifications Toggle -->
+<div class="bg-surface-container-lowest rounded-xl p-4 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<div>
+<p class="font-body-lg text-body-lg font-medium">Notifications</p>
+<p class="font-body-md text-on-surface-variant">Alerts for shared updates</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Baby Mode Toggle -->
+<div class="bg-surface-container-lowest rounded-xl p-4 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">child_care</span>
+</div>
+<div>
+<p class="font-body-lg text-body-lg font-medium">Baby Mode</p>
+<p class="font-body-md text-on-surface-variant">Switch from Pregnancy to Baby</p>
+</div>
+</div>
+<div class="bg-surface-variant rounded-full p-1 flex items-center">
+<button class="px-4 py-1.5 rounded-full text-[12px] font-bold transition-all bg-white shadow-sm text-primary">PREGNANCY</button>
+<button class="px-4 py-1.5 rounded-full text-[12px] font-bold transition-all text-on-surface-variant">BABY</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Backup Sync -->
+<section class="pt-4 border-t border-outline-variant/30">
+<div class="bg-tertiary-fixed/30 rounded-xl p-4 flex items-center gap-4 border-dashed border-2 border-tertiary-container/30">
+<span class="material-symbols-outlined text-tertiary">cloud_sync</span>
+<div>
+<h4 class="font-body-lg text-body-lg font-medium text-on-tertiary-container">Backup sync</h4>
+<p class="font-body-md text-tertiary">Cloud archives and data export (Coming soon)</p>
+</div>
+</div>
+</section>
+<div class="text-center pt-8 pb-12 opacity-40">
+<p class="font-label-lg text-label-lg uppercase tracking-[2px]">Nurture Share v2.4.0</p>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full flex justify-around items-center px-4 py-3 bg-surface-container pb-safe z-50 rounded-t-xl shadow-lg">
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined">home</span><span class="font-label-lg text-label-lg mt-1">Timeline</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined">checklist</span><span class="font-label-lg text-label-lg mt-1">Tasks</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined">description</span><span class="font-label-lg text-label-lg mt-1">Notes</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span><span class="font-label-lg text-label-lg mt-1">Settings</span>
+</a>
+</nav>
+<script>
+        function copyToClipboard() {
+            const btn = event.currentTarget;
+            const originalText = btn.innerText;
+            btn.innerText = "COPIED!";
+            btn.classList.replace('bg-primary', 'bg-primary-container');
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.classList.replace('bg-primary-container', 'bg-primary');
+            }, 2000);
+        }
+        document.querySelectorAll('.bg-surface-variant button').forEach(button => {
+            button.addEventListener('click', function() {
+                const parent = this.parentElement;
+                parent.querySelectorAll('button').forEach(btn => {
+                    btn.classList.remove('bg-white', 'shadow-sm', 'text-primary');
+                    btn.classList.add('text-on-surface-variant');
+                });
+                this.classList.add('bg-white', 'shadow-sm', 'text-primary');
+                this.classList.remove('text-on-surface-variant');
+            });
+        });
+    </script>
+</body></html>

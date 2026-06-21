@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/timelineFragment">
+
+    <fragment
+        android:id="@+id/timelineFragment"
+        android:name="com.nurtureshare.app.ui.timeline.TimelineFragment"
+        android:label="@string/nav_timeline"
+        tools:layout="@layout/fragment_timeline">
+        <action
+            android:id="@+id/action_timeline_to_addTask"
+            app:destination="@id/addTaskFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.nurtureshare.app.ui.tasks.TasksFragment"
+        android:label="@string/nav_tasks"
+        tools:layout="@layout/fragment_tasks">
+        <action
+            android:id="@+id/action_tasks_to_addTask"
+            app:destination="@id/addTaskFragment"/>
+        <action
+            android:id="@+id/action_tasks_to_taskDetail"
+            app:destination="@id/taskDetailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.nurtureshare.app.ui.tasks.TaskDetailFragment"
+        android:label="@string/task_detail_title"
+        tools:layout="@layout/fragment_task_detail">
+        <argument android:name="taskId"          app:argType="string" android:defaultValue=""/>
+        <argument android:name="taskTitle"       app:argType="string" android:defaultValue=""/>
+        <argument android:name="taskDescription" app:argType="string" android:defaultValue=""/>
+        <argument android:name="taskAssignedTo"  app:argType="string" android:defaultValue="ME"/>
+        <argument android:name="taskDueDate"     app:argType="string" android:defaultValue=""/>
+        <argument android:name="taskStatus"      app:argType="string" android:defaultValue="PENDING"/>
+        <argument android:name="taskSynced"      app:argType="boolean" android:defaultValue="false"/>
+        <action
+            android:id="@+id/action_taskDetail_to_addTask"
+            app:destination="@id/addTaskFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.nurtureshare.app.ui.tasks.AddTaskFragment"
+        android:label="@string/add_task_title"
+        tools:layout="@layout/fragment_add_task">
+        <argument
+            android:name="taskId"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="taskTitle"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="taskDescription"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="taskAssignedTo"
+            app:argType="string"
+            android:defaultValue="ME"/>
+        <argument
+            android:name="taskDueDate"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="taskSynced"
+            app:argType="boolean"
+            android:defaultValue="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.nurtureshare.app.ui.notes.NotesFragment"
+        android:label="@string/nav_notes"
+        tools:layout="@layout/fragment_notes">
+        <action
+            android:id="@+id/action_notes_to_addNote"
+            app:destination="@id/addNoteFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.nurtureshare.app.ui.notes.AddNoteFragment"
+        android:label="@string/add_note_screen_title"
+        tools:layout="@layout/fragment_add_note"/>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.nurtureshare.app.ui.settings.SettingsFragment"
+        android:label="@string/nav_settings"
+        tools:layout="@layout/fragment_settings"/>
+
+</navigation>

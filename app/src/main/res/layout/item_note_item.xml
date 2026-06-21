@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/cb_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:visibility="visible"
+        app:buttonTint="@color/primary"/>
+
+    <ImageView
+        android:id="@+id/iv_bullet"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/outline"
+        android:visibility="gone"
+        android:contentDescription="Bullet"/>
+
+    <TextView
+        android:id="@+id/tv_item_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:text="Note item content"
+        android:textColor="@color/on_surface"
+        android:textSize="14sp"/>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip_urgent"
+        style="@style/Widget.Material3.Chip.Assist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/note_item_urgent"
+        android:textColor="@color/secondary"
+        android:textSize="10sp"
+        android:visibility="gone"
+        app:chipBackgroundColor="@color/secondary_fixed"
+        app:chipMinHeight="24dp"/>
+
+</LinearLayout>

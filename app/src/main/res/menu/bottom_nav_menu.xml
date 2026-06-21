@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/timelineFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_timeline"/>
+    <item
+        android:id="@+id/tasksFragment"
+        android:icon="@drawable/ic_checklist"
+        android:title="@string/nav_tasks"/>
+    <item
+        android:id="@+id/notesFragment"
+        android:icon="@drawable/ic_notes"
+        android:title="@string/nav_notes"/>
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/nav_settings"/>
+</menu>
