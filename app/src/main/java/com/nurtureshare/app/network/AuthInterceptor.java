@@ -36,7 +36,10 @@ public class AuthInterceptor implements Interceptor {
 
         Response response = chain.proceed(request);
 
-        if ((response.code() == 401 || response.code() == 403) && tokenManager.getToken() != null) {
+        // Only 401 (unauthenticated) means the session is invalid. 403 (forbidden)
+        // is a legitimate authorization denial on a specific resource and must NOT
+        // log the user out or clear their token.
+        if (response.code() == 401 && tokenManager.getToken() != null) {
             tokenManager.clearToken();
             Intent intent = new Intent(appContext, LoginActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
